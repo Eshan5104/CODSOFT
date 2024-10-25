@@ -50,7 +50,9 @@ public class NumberGuessingGame {
                     wins++;
                     totalAttempts += attempts;
                     break;
-                } else if (guess < secretNumber) {
+                } 
+                else if (guess < secretNumber) 
+                {
                     System.out.println("Your guess is too low.");
                 } else {
                     System.out.println("Your guess is too high.");
@@ -65,7 +67,8 @@ public class NumberGuessingGame {
             System.out.print("Do you want to play another round? (yes/no): ");
             String playAgain = scanner.next();
 
-            if (!playAgain.equalsIgnoreCase("yes")) {
+            if (!playAgain.equalsIgnoreCase("yes")) 
+            {
                 break;
             }
         }
